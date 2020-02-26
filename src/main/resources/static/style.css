@@ -1,3 +1,86 @@
-h1{
-color:blue;
+
+
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+
+.is-hero {
+    width:100%;
+    height: 100%;
+}
+
+.is-sticky{
+
+}
+
+nav{
+    width:100%;
+    height:3rem;
+    margin-bottom:1rem;
+    border-bottom: 1px solid;
+    position:sticky;
+    top:0;
+    overflow: hidden;
+    background-color:white;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+  }
+
+.is-hero-text{
+    margin:auto;
+    width:50%;
+    text-align: center;
+}
+
+.is-hero > .is-head {
+    /* font-size: 2rem; */
+}
+
+/* all you need for a container-type class */
+.is-flex {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+.has-text-centered{
+    text-align:center;
+}
+
+.is-perfectly-centered{
+    margin:2rem;
+    text-align:center;
+    
+}
+
+/* wrapper chilren that will also flex */
+.is-flex > div {
+    width:50%;
+    margin:1rem;
+    flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 33.3333%;
+    flex-basis: 200px;
+    align-items: center;
+    border: 1px solid;
 }
