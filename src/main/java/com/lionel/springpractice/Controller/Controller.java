@@ -1,8 +1,10 @@
 package com.lionel.springpractice.Controller;
 
 
+import com.lionel.springpractice.Model.Animal;
 import com.lionel.springpractice.Model.Book;
 import com.lionel.springpractice.Model.Movie;
+import com.lionel.springpractice.Repo.AnimalRepo;
 import com.lionel.springpractice.Repo.BookRepo;
 import com.lionel.springpractice.Repo.MovieRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,11 @@ public class Controller {
     @Autowired
     MovieRepo movieRepo;
 
+    // Autowired allows us to avoid constructing an object
+    // think of it as dependency injection
+    @Autowired
+    AnimalRepo animalRepo;
+
     // exposing the endpoint "/hello" that will have the value of the return value of the hello() function
     @RequestMapping("/hello")
     public String hello(){
@@ -33,6 +40,13 @@ public class Controller {
     @GetMapping("/movies")
     public Iterable<Movie> getMovies(){
         return movieRepo.findAll();
+    }
+
+    // creating our get method for our animals repo
+    // this aligns 1:1 with the HTTP GET method
+    @GetMapping("/animals")
+    public Iterable<Animal> getAnimals(){
+        return animalRepo.findAll();
     }
 
 }
