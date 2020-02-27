@@ -11,16 +11,26 @@
 <body>
 
 <div>
-<ul>
 
-<li th:each=" animal : ${animals}">
-    <h1 th:text="${animal.name}">
+    <div class="is-flex">
+        <div class="is-card">
+            <span>
+                element
+            </span>
+        </div>
+    </div>
 
-    </h1>
 
-</li>
+    <ul>
 
-</ul>
+
+        <li th:each=" book : ${books}">
+            <h1 th:text="${book.name}">
+
+            </h1>
+        </li>
+
+    </ul>
 </div>
 
 </body>

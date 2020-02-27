@@ -84,3 +84,12 @@ footer {
     align-items: center;
     border: 1px solid;
 }
+
+.is-card:hover {
+    box-shadow: 0rem 0.2rem 1rem rgba(0,0,0,0.3)
+}
+
+.is-card {
+    max-width:25rem;
+    transition: 0.3s;
+}

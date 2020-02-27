@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+<div>
+
+    <div class="is-flex">
+        <div class="is-card">
+            <span>
+                element
+            </span>
+        </div>
+    </div>
+
+
+    <ul>
+
+
+        <li th:each=" movie : ${movies}">
+            <h1 th:text="${movie.title}">
+
+            </h1>
+        </li>
+
+    </ul>
+</div>
+
+</body>
+
+</html>
