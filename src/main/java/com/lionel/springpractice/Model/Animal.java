@@ -12,10 +12,20 @@ public class Animal {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String name;
+    private String imageUrl;
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 
     // we have a standard constructor with parameters in order to create custom objects
-    public Animal(String name) {
+    public Animal(String name, String imageUrl) {
         this.name = name;
+        this.imageUrl = imageUrl;
     }
 
     // we need a default constructor in order for our model to work

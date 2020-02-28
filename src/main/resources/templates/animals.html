@@ -10,34 +10,22 @@
 
 <body>
 
-<div>
-
+<div class="is-container">
     <div class="is-flex">
-        <div class="is-card">
-            <span>
-                element
-            </span>
+        <div class="is-card is-perfectly-centered" th:each="animal : ${animals}">
+            <div>
+            <img class="is-card-img" th:src=${animal.imageUrl} width="100%">
+            </div>
+            <div>
+
+            <h3 th:text="${animal.name}">
+
+            </h3>
+            </div>
         </div>
     </div>
 
 
-<ul>
-
-<li th:each=" animal : ${animals}">
-    <h1 th:text="${animal.name}">
-
-    </h1>
-
-</li>
-
-
-    <li th:each=" movie : ${movies}">
-        <h1 th:text="${movie.title}">
-
-        </h1>
-    </li>
-
-</ul>
 </div>
 
 </body>

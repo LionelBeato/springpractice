@@ -33,8 +33,8 @@ public class Runner implements CommandLineRunner {
 
 
         // this is calling the save method in my repo to create two new objects
-        animalRepo.save(new Animal("Cheetah"));
-        animalRepo.save(new Animal("Zebra"));
+        animalRepo.save(new Animal("Cheetah", "https://pbs.twimg.com/profile_images/1050103669507657734/SBAh4Yg0_400x400.jpg"));
+        animalRepo.save(new Animal("Zebra", "https://i0.wp.com/metro.co.uk/wp-content/uploads/2018/07/sei_23061689-e184.jpg"));
 
     }
 }

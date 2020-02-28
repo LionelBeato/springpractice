@@ -90,6 +90,15 @@ footer {
 }
 
 .is-card {
+    min-width:10rem;
     max-width:25rem;
     transition: 0.3s;
+    border-radius: 30px;
+    overflow:hidden;
+
+}
+
+.is-card-img{
+clip-path: circle(61.1% at 50% 32%);
+
 }
